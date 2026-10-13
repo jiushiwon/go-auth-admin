@@ -1,0 +1,10 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+  vue-demi: true
+# pnpm 10+ 起，onlyBuiltDependencies 从 package.json 的 pnpm 字段移到此处。
+# 此前是未替换的模板占位符（allowBuilds / "set this to true or false"），
+# 导致 esbuild、vue-demi 的 build script 被跳过 → vite 找不到 esbuild 二进制而无法启动。
+onlyBuiltDependencies:
+  - esbuild
+  - vue-demi

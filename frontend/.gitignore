@@ -1,0 +1,17 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.log
+
+# vite 冷启动生成的临时配置副本（避免 git 误提交）
+vite.config.ts.timestamp-*.mjs
+
+# playwright / 一次性探针脚本
+probe-*.mjs
+test/probe-*.mjs
+test-*.mjs
